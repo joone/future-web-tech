@@ -31,7 +31,7 @@ function animation() {
     for (i = 0; i < x.length; i++) {
       x[i].style.background = 'rgba(' + Math.floor(Math.random() * 255) + ',' +
                                         Math.floor(Math.random() * 255) + ',' +
-                                        Math.floor(Math.random() * 255) + ', 0.5)';
+                                        Math.floor(Math.random() * 255) + ', 1.0)';
     }
 
     //inside the first frame, queue the execution of next frame.
@@ -47,7 +47,7 @@ function start_animation() {
 
   var results = document.getElementById("results");
 
-  for (var i = 0; i < 10; i++) {
+  for (var i = 0; i < 5; i++) {
      var elem = document.createElement("div");
      elem.style.webkitTransform = "rotate3d(1,1,0," + ((i + 1) * 10).toString() + "deg)";
      backdrop.appendChild(elem);
